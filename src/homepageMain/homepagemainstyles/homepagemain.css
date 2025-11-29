@@ -1,0 +1,504 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  width: 100%;
+}
+.homepage-main {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.header2 {
+  text-align: center; /* center all text */
+  background-color: #fff;
+  box-shadow: 0 2px 4px #0000001a;
+  margin: 0;
+  padding: 0;
+}
+
+.headerh1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  display: inline; /* allow text to flow inline */
+}
+
+.bluetext {
+  font-size: 40px;
+  font-weight: bold;
+  color: #808cfd;
+  display: inline;
+  padding-left: 5px; /* allow it to appear immediately after h1 */
+}
+
+.gym {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch; /* Equal height */
+}
+
+/* Main container holding image + text */
+.gym-overall-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE (desktop 50%) */
+.gymImg {
+  flex: 1 1 50%;
+  max-width: 50%;
+  height: 450px;
+  min-width: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT CONTAINER (desktop 50%) */
+.gymtext-container {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px; /* same as image */
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* TEXT */
+.gymph2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+.gymp {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+/* BUTTON */
+.learnmorebtn {
+  background-color: #808cfd;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 20px;
+  align-self: flex-start; /* ensures button stays visible */
+  margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .headerh1,
+  .bluetext {
+    font-size: 2rem;
+    /* smaller font size on mobile */
+  }
+
+  .header2 {
+    padding: 10px;
+  }
+
+  .gym {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+  }
+  .gymImg,
+  .gymtext-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto; /* allow height to adjust */
+  }
+  .gymtext-container {
+    height: auto; /* allow height to adjust */
+    padding: 15px 20px;
+  }
+  .gymh2 {
+    font-size: 1.7rem;
+  }
+  .gymp {
+    font-size: 1.1rem;
+  }
+  .learnmorebtn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerh1,
+  .bluetext {
+    font-size: 1.5rem; /* even smaller font size on small mobile */
+  }
+
+  .header2 {
+    padding: 5px;
+  }
+
+  .gymh2 {
+    font-size: 1.5rem;
+  }
+  .gymp {
+    font-size: 1rem;
+  }
+  .learnmorebtn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+/*expertgym*/
+.expertgym-overall-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ecff;
+}
+
+.expertgym {
+  width: 80%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px 0;
+  flex-wrap: wrap; /* allow wrapping */
+  background-color: #e9ecff;
+}
+
+/* Desktop: 1 : 1 : 1 ratio */
+.expertgymcard,
+.expertImg {
+  flex: 1 1 calc(33.33% - 10px);
+  height: 400px;
+  max-width: 33.33%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.expertgymcard {
+  padding: 10px;
+}
+
+/* Card design */
+.expertgymcard {
+  background-color: #e9ecff;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 4px #0000001a;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image container */
+.expertImg {
+  position: relative;
+}
+
+/* Image inside */
+.expertImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.expertgymp {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .expertgymcard,
+  .expertImg {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 10px;
+  }
+
+  .expertgym {
+    flex-wrap: wrap; /* allow wrapping */
+    justify-content: center;
+  }
+
+  .expertgymh2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .expertgymp {
+    font-size: 1rem;
+  }
+
+  .expertgymcard,
+  .expertImg {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    min-height: 350px;
+  }
+
+  .expertgym {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    width: 60%;
+  }
+
+  .expertgymh2 {
+    font-size: 1.2rem;
+  }
+}
+/*join the community*/
+.joinheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.joinh1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.joinspan {
+  font-size: 40px;
+  font-weight: bold;
+  color: #808cfd;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .joinh1,
+  .joinspan {
+    font-size: 2rem; /* smaller font size on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .joinh1,
+  .joinspan {
+    font-size: 1.5rem; /* even smaller font size on small mobile */
+  }
+}
+/*benefit*/
+.overall-benefit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #e9ecff;
+  padding: 20px 0;
+}
+
+.benefit-container {
+  width: 90%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; /* same height for both sections */
+  flex-wrap: nowrap; /* keep 30/70 layout */
+}
+
+.benefit {
+  flex: 0 0 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.benefit-img {
+  flex: 1 1 70%;
+  max-width: 70%;
+  min-width: 0;
+  box-sizing: border-box;
+  position: relative; /* allows image to fill height */
+}
+
+.benefit-img img {
+  width: 100%;
+  height: 100%; /* make image match the text height */
+  object-fit: cover; /* prevents distortion and overflow */
+  display: block;
+}
+
+.benefit-card {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.benefith1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.benefitp {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  line-height: 1.5;
+  word-spacing: 2px;
+  margin: 5px 0;
+}
+
+.benefith2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .benefit,
+  .benefit-img {
+    flex: 1 1 50%;
+    max-width: 50%;
+    height: auto; /* allow height to adjust */
+  }
+
+  .benefith1 {
+    font-size: 1.5rem;
+  }
+
+  .benefitp {
+    font-size: 1.2rem;
+  }
+
+  .benefith2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefit-container {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .benefit,
+  .benefit-img {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto; /* allow height to adjust */
+  }
+
+  .benefith1 {
+    font-size: 1.2rem;
+  }
+
+  .benefitp {
+    font-size: 1rem;
+  }
+
+  .benefith2 {
+    font-size: 0.9rem;
+  }
+}
+
+/*reserve spot*/
+.reserve-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  height: 400px;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #808cfd;
+}
+
+.WWBI {
+  font-size: 1.5;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.reserveh2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.reservebtn {
+  background-color: #e9ecff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 900px) {
+  .reserveh2 {
+    font-size: 1.9rem;
+  }
+
+  .WWBI {
+    font-size: 1.2rem;
+  }
+  .reservebtn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reserveh2 {
+    font-size: 1.5rem;
+  }
+
+  .WWBI {
+    font-size: 1rem;
+  }
+  .reservebtn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

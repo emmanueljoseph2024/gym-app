@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ecff;
+  box-shadow: 0 2px 4px #0000001a;
+  flex-direction: column;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  max-width: 1500px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  align-self: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.reserve-button {
+  background-color: #808cfd;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.homepagelinks {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.reserve-link{
+ color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.homepagelinks:hover {
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 50px;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+.plusbtn {
+  display: none;
+  height: 25px;
+  width: 25px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.closenav {
+  color: black;
+  width: 25px;
+  height: 25px;
+}
+
+.mobile-nav {
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  width:100vw;
+  height:100vh;
+  background-color: #e9ecff;
+  box-shadow: -2px 0 5px #0000001a;
+  padding: 20px;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+  display: none;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.homepagelinksmobile {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-reserve-button{
+  background-color: #808cfd;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .reserve-button {
+    font-size: 13px;
+    padding: 5px;
+    font-weight: 600;
+    display: none;
+  }
+
+
+  .plusbtn {
+    display: block;
+  }
+
+  .homepagelinks {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerh1,
+  .bluetext {
+    font-size: 1.5rem; /* even smaller font size on small mobile */
+  }
+
+  .homepagelinks {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .plus-icon {
+    display: block;
+  }
+
+  .homepagelinks {
+    display: none;
+  }
+}
