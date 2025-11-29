@@ -271,8 +271,6 @@ body {
   position: absolute;
   left: 10px;
   bottom: 20px;
-  width: 50%;
-  min-width: 400px;
   color: #ffffff;
   background-color: #000000;
   text-wrap:wrap;
